@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    <link rel="manifest" href="manifest.json">
+    <link href="main.8a688537.css" rel="stylesheet">
+    <title>Kaspi.kz</title>
+    <style>
+        /* Стили для прокрутки */
+        .with-scroll-bars-hidden {
+            overflow: hidden !important;
+            padding-right: 0px !important;
+        }
+
+        body {
+            overflow: hidden !important;
+            overscroll-behavior: contain;
+            position: relative !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .right-scroll-bar-position {
+            right: 0px !important;
+        }
+
+        .width-before-scroll-bar {
+            margin-right: 0px !important;
+        }
+
+        body {
+            --removed-body-scroll-bar-size: 0px;
+        }
+    </style>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="root">
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <div class="title">
+                    <img src="arrow.png" alt="" class="back-icon">
+                    <h1 class="text-title">Удостоверение личности</h1>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tab">
+                    <div class="btntab">
+                        <input type="radio" name="tab-btn" id="tab-btn-1" value="doc" checked>
+                        <label for="tab-btn-1">
+                            <p>Документ</p>
+                        </label>
+                        <input type="radio" name="tab-btn" id="tab-btn-2" value="req">
+                        <label for="tab-btn-2">
+                            <p>Реквизиты</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="middle">
+                <div class="img-upload" style="height: 50vh;">
+                    <div class="input-img">
+                        <input type="file" name="img-upl" id="idupload" class="input-file">
+                        <label for="idupload">
+                            <span>Загрузить</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="btnfooter" id="docbtn">
+                    <button id="btnftr1">
+                        <img src="qr.png" alt="">
+                        Предъявить документ
+                    </button>
+                    <button id="btnftr2" class="share">
+                        <img src="upload.png" alt="">
+                        Отправить документ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипт для приложения -->
+    <script defer src="main.34a190e0.js"></script>
+</body>
+</html>
